@@ -1,6 +1,6 @@
 ---
 title: "HubSpot でカスタムモジュールを作ってみよう 🎨"
-emoji: "📝"
+emoji: "🎨"
 type: "tech"
 topics: [HubSpot, CMS]
 published: true

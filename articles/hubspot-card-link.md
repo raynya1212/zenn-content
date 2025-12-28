@@ -1,6 +1,6 @@
 ---
 title: "【HubSpot】カードリンク（ブログカード）を作ってみよう 🔗"
-emoji: "📝"
+emoji: "🔗"
 type: "tech"
 topics: [HubSpot, CMS, Serverless]
 published: true
