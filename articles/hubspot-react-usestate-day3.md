@@ -14,7 +14,6 @@ published_at: 2025-05-04
 ![ChatGPT Image](https://23823306.fs1.hubspotusercontent-na1.net/hubfs/23823306/AI-Generated%20Media/Images/ChatGPT%20Image%202025%E5%B9%B45%E6%9C%883%E6%97%A5%2014_31_23%20(1).png)
 
 ### はじめに 🌿
-`useState`
 HubSpotのReactモジュールで「クリックで表示が切り替わるUI」を作ってみたい！
 そんな思いで useState を使ったモジュールにチャレンジしたら、思ったように動かない...！？
 今回は、Reactの状態管理（useState） と HubSpot CMS の相性、そしてそれを解決するための island構成 について、実体験ベースでまとめます✨
@@ -161,7 +160,7 @@ export default function ChangePhraseIsland({ phrase1, phrase2, phrase3 }) {
 ![ChatGPT Image](https://23823306.fs1.hubspotusercontent-na1.net/hubfs/23823306/MeowBit.dev/Blog%20images/react-day03_1.gif)
 
 ### 注意ポイント ⚡
-- `?island` ✅ のついた import を忘れずに！
+- ✅ のついた import を忘れずに！
 - ✅ island は「クライアントJSが必要な処理」だけ切り出す
 - ✅ ファイル名の先頭は英字にする（数字始まりはビルドNG）
 - ✅ モジュール側で `Island` コンポーネントを使い、props経由で値を渡す
