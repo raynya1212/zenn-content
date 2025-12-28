@@ -40,4 +40,4 @@ published_at: 2025-04-13
 - NLP の各機能はベクター情報を使って判定している
 - N-gram は文脈理解のベース
 
-![ChatGPT Image](https://23823306.fs1.hubspotusercontent-na1.net/hubfs/23823306/AI-Generated%20Media/Images/nlp.png)
+![ChatGPT Image](https://23823306.fs1.hubspotusercontent-na1.net/hubfs/23823306/AI-Generated%20Media/Images/ChatGPT%20Image%202025%E5%B9%B44%E6%9C%8813%E6%97%A5%2022_13_08.png)

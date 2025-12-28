@@ -33,4 +33,4 @@ published_at: 2025-04-13
 - 正則化は頻出キーワード
 - 逆は未学習（Underfitting）
 
-![ChatGPT Image](https://23823306.fs1.hubspotusercontent-na1.net/hubfs/23823306/AI-Generated%20Media/Images/overfitting.png)
+![ChatGPT Image](https://23823306.fs1.hubspotusercontent-na1.net/hubfs/23823306/AI-Generated%20Media/Images/ChatGPT%20Image%202025%E5%B9%B44%E6%9C%8813%E6%97%A5%2022_02_30.png)
