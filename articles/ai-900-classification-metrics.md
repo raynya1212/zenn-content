@@ -40,4 +40,4 @@ Precision と Recall のバランスをとった指標。
 | 全体性能ざっくり | Accuracy | 全体の当たり具合 |
 | 不均衡データ | F1-score | バランス良い測定 |
 
-![ChatGPT Image](https://23823306.fs1.hubspotusercontent-na1.net/hubfs/23823306/AI-Generated%20Media/Images/classification-metrics.png)
+![ChatGPT Image](https://23823306.fs1.hubspotusercontent-na1.net/hubfs/23823306/AI-Generated%20Media/Images/ChatGPT%20Image%202025%E5%B9%B44%E6%9C%8813%E6%97%A5%2021_40_25.png)
