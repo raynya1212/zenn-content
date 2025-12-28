@@ -1,8 +1,8 @@
 ---
 title: "AI-900 合格レポート／学習方法と振り返りメモ"
 emoji: "🎓"
-type: "tech"
-topics: [AI-900,Azure AI,Microsoft Certification]
+type: "idea"
+topics: [AI-900,Azure,AI,Microsoft]
 published: true
 published_at: 2025-04-20
 ---
