@@ -7,7 +7,7 @@ published: true
 published_at: "2025-03-26"
 ---
 
-# 【HubSpot】はじめてのHubSpotサーバーレス関数（中編）：公開APIと連携してみよう 🧪
+# 【HubSpot】はじめてのHubSpotサーバーレス関数（中編）：公開APIと連携してみよう
 
 2025-03-26 · Reina
 

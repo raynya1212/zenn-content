@@ -7,7 +7,7 @@ published: true
 published_at: "2025-03-30"
 ---
 
-# 【HubSpot】はじめてのHubSpotサーバーレス関数（後編）：HubSpot APIで企業一覧を表示してみよう 🧪
+# 【HubSpot】はじめてのHubSpotサーバーレス関数（後編）：HubSpot APIで企業一覧を表示してみよう
 
 2025-03-30 · Reina
 

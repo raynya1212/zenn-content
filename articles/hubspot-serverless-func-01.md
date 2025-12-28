@@ -7,7 +7,7 @@ published: true
 published_at: "2025-03-24"
 ---
 
-# 【HubSpot】はじめてのHubSpotサーバーレス関数（前編）：まずは動かしてみよう 🧪
+# 【HubSpot】はじめてのHubSpotサーバーレス関数（前編）：まずは動かしてみよう
 
 2025-03-24 · Reina
 
