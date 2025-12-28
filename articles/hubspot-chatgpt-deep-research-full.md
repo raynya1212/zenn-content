@@ -80,8 +80,8 @@ HubSpotのマーケティングイベント「地域企業のためのChatGPT活
 
 【対象のコンタクト】
 上記イベントに登録したコンタクトを対象に分析を行ってください。
-https://app.hubspot.com/marketing-events/〜（省略）
-https://app.hubspot.com/import/〜（省略）
+- マーケティングイベント画面のURL
+- インポート画面のURL
 
 → 対象、目的、要約したい項目が明確で、ChatGPTが迷わず動いてくれます！
 ![](https://23823306.fs1.hubspotusercontent-na1.net/hubfs/23823306/MeowBit.dev/Blog%20images/chatgpt_hubspot%20(2)%20(1).png)
