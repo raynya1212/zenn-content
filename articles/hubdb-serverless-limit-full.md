@@ -59,58 +59,90 @@ https://23823306.fs1.hubspotusercontent-na1.net/hubfs/23823306/MeowBit.dev/Blog%
 | max_submissions | 送信可能な最大数 | number |
 | deadline | 申込締切日時（UTC） | datetime |
 
-> テンプレート側の if 文で、送信数の上限や締切日時をもとに **フォームの表示／非表示** を切り替える。
+> このテーブルは フォームごとの送信状態を管理するためのもので、テンプレート側のif文で送信数の上限や締切日をもとにフォームの表示/非表示を切り替えます
 
-### テンプレート内の HubL（抜粋／擬似コード）
+### テンプレート内の HubL
 ```html
-{% set today = unixtimestamp(local_dt) %}
-{% set table = hubdb_table_rows("HUBDB_ID_HERE") %}
+{# 今この瞬間のローカル時間を取得してUNIXタイムに変換してるよ #}
+{% set today = unixtimestamp(local_dt) %} 
+{# HubDBのテーブルIDを指定してデータを取得！ #}
+{% set table = hubdb_table_rows("HUBDB_ID_HERE") %} 
 {% for row in table %}
-  {% if row.form_guid "FORM_GUID_HERE" %}
+  {% if row.form_guid  "FORM_GUID_HERE" %}
     {% set current_submissions = row.current_submissions %}
     {% set submission_limit = row.max_submissions %}
     {% set deadline_timestamp = row.deadline %}
 
     {% if current_submissions < submission_limit and today < deadline_timestamp %}
-      <!-- フォーム表示 -->
+      {# 送信数も期限もOKならフォームを表示するよ！ #}
+      <div id="my-form-wrapper">
+        <div id="my-form-target"></div>
+        <script src="https://js.hsforms.net/forms/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            region: "na1",
+            portalId: "YOUR_PORTAL_ID",
+            formId: "FORM_GUID_HERE",
+            target: '#my-form-target',
+            onFormSubmit: function($form) {
+              // 送信時にカウントアップするためにサーバレス関数を叩く！
+              fetch('/_hcms/api/update-form-submissions', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ form_guid: 'FORM_GUID_HERE' })
+              });
+            }
+          });
+        </script>
+      </div>
     {% else %}
-      <!-- 締め切りメッセージ表示 -->
+      {# 上限達成または締切すぎたら、締め切りメッセージを出す！ #}
+      <div class="form-closed-message">
+        <p>このフォームは締め切りました🙇‍♀️</p>
+      </div>
     {% endif %}
   {% endif %}
 {% endfor %}
 ```
 
-### サーバレス関数（抜粋／擬似コード）
+if current_submissions < submission_limit and today < deadline_timestampで、送信数も期限にも制限に達していない場合のみフォームが表示されるようになっているよ
+
+### サーバレス関数
 ```javascript
-const HUBSPOT_PRIVATE_APP_TOKEN = process.env.FORM_LIMIT_MANAGER;
+const HUBSPOT_PRIVATE_APP_TOKEN = process.env.FORM_LIMIT_MANAGER; // 環境変数にトークンをセット！
 
 exports.main = async (context = {}, sendResponse) => {
   try {
     const body = context.body || {};
     const formGuid = body.form_guid;
-    const tableId = 'YOUR_TABLE_ID';
+    const tableId = 'YOUR_TABLE_ID'; //HubDBのテーブルIDを指定
 
     if (!formGuid) {
       return sendResponse({ statusCode: 400, body: { message: 'form_guid がリクエストに含まれていません' } });
     }
 
-    // HubDB の行データを取得して該当 form_guid を探索
-    const recordsResponse = await fetch(`https://api.hubapi.com/cms/v3/hubdb/tables/${tableId}/rows`, { /* ...auth... */ });
+    // HubDBの行データを取得して、該当するform_guidを探す
+    const recordsResponse = await fetch(`https://api.hubapi.com/cms/v3/hubdb/tables/${tableId}/rows`, { ... });
     const records = await recordsResponse.json();
-    const targetRecord = records.results.find(record => record.values.form_guid === formGuid);
+    const targetRecord = records.results.find(record => record.values.form_guid = formGuid);
 
     if (!targetRecord) {
       return sendResponse({ statusCode: 404, body: { message: '該当レコードが見つかりませんでした' } });
     }
 
-    // current_submissions を +1
+    // 現在の送信数を+1する準備！
+    const rowResponse = await fetch(`https://api.hubapi.com/cms/v3/hubdb/tables/${tableId}/rows/${targetRecord.id}`, { ... });
+    const rowData = await rowResponse.json();
     const updatedValues = {
-      ...targetRecord.values,
+      ...rowData.values,
       current_submissions: (targetRecord.values.current_submissions || 0) + 1
     };
 
-    await fetch(`https://api.hubapi.com/cms/v3/hubdb/tables/${tableId}/rows/${targetRecord.id}/draft`, { /* ...PUT body: updatedValues ... */ });
-    await fetch(`https://api.hubapi.com/cms/v3/hubdb/tables/${tableId}/draft/publish`, { /* ... */ });
+    // draftに更新して...
+    await fetch(`https://api.hubapi.com/cms/v3/hubdb/tables/${tableId}/rows/${targetRecord.id}/draft`, { ... });
+
+    // そしてpublishして確定！
+    await fetch(`https://api.hubapi.com/cms/v3/hubdb/tables/${tableId}/draft/publish`, { ... });
 
     return sendResponse({ statusCode: 200, body: { message: '送信数を更新して公開しました', newCount: updatedValues.current_submissions } });
   } catch (error) {
@@ -130,6 +162,7 @@ exports.main = async (context = {}, sendResponse) => {
   }
 }
 ```
+このサーバレス関数はフォーム送信がされたイベントをトリガーとしてリクエストが実行されて、HubDBの "current_submissions" 列の値を +1 します
 
 ## 注意ポイント ⚡
 - `deadline` / `max_submissions` は手動管理が必要
