@@ -1,5 +1,5 @@
 ---
-title: "HubSpot×React：CTAボタン付きHeroモジュールに挑戦してみた"
+title: "HubSpot×React：CTAボタン付きHeroモジュールに挑戦してみた【HubSpot×React Day8】"
 emoji: "⚛️"
 type: "tech"
 topics: [HubSpot, React, HubSpot CMS]

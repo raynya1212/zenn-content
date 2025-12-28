@@ -1,5 +1,5 @@
 ---
-title: "HubSpot CMS React × useState｜動かない原因とisland構成での対応【Day3】"
+title: "HubSpot CMS React × useState｜動かない原因とisland構成での対応【HubSpot×React Day3】"
 emoji: "⚛️"
 type: "tech"
 topics: [HubSpot, React, HubSpot CMS]

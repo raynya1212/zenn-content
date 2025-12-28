@@ -1,5 +1,5 @@
 ---
-title: "HubSpot CMS × Reactで繰り返しフィールド付きモジュールを作成する方法【Day5】"
+title: "HubSpot CMS × Reactで繰り返しフィールド付きモジュールを作成する方法【HubSpot×React Day5】"
 emoji: "⚛️"
 type: "tech"
 topics: [HubSpot, React, HubSpot CMS]
