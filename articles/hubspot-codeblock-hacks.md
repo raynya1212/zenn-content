@@ -36,17 +36,7 @@ https://zenn.dev/raynya/articles/hubspot-codeblock
 2. **module.html** で各コードブロックの構造とラベル・ボタン表示を定義
 3. **Prism.js + 自前JS + CSS** の三位一体連携で機能を実現！
 
-
-``` html
-<div class="label-bar">{{ module.block_label }}
-  <button class="copy-button">📋 コピー</button>
-</div>
-<pre>
-  <code class="language-{{ module.language }}">
-    {{ module.code_snippet | escape | escape_jinjava }}
-  </code>
-</pre>
-```
+![](/images/hubspot-codeblock-hacks/Videotogif.gif)
 
 ---
 
