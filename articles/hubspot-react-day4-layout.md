@@ -252,7 +252,6 @@ export default function CustomLayoutCardIsland({ layout, colorTheme }) {
 🧡 **ここが今回のステップアップポイント！**   
 [前回](https://blog.ryamagami.com/hubspot-react_module_03)まではテキストや表示の切り替えだけだったけど、今回は**スタイル（見た目そのもの）**を制御してるところが新しいポイント🎨
 
-{% module\_block module "widget\_1931ba47-821d-4c26-adb1-f6245ce36001" %}{% module\_attribute "box\_type" is\_json="true" %}{% raw %}"tip"{% endraw %}{% end\_module\_attribute %}{% module\_attribute "child\_css" is\_json="true" %}{% raw %}{}{% endraw %}{% end\_module\_attribute %}{% module\_attribute "content" is\_json="true" %}{% raw %}"
 
 **補足：三項演算子での条件式、= がないのはなぜ？**
 ```

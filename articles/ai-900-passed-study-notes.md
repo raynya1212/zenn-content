@@ -26,6 +26,8 @@ published_at: 2025-04-20
 - [Microsoft Learn の AI Fundamentals 学習パス](https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-fundamentals/?practice-assessment-type=certification)
 - ChatGPTでわからない用語を解説してもらう
 - Youtubeの対策動画（↓がわかりやすくておすすめ）
+  
+https://www.youtube.com/watch?v=m9Xka7Vszok
 
 🔶 **アウトプット**
 - [MS Learn にある模擬問題](https://learn.microsoft.com/ja-jp/credentials/certifications/azure-ai-fundamentals/practice/assessment?assessment-type=practice&assessmentId=26&practice-assessment-type=certification)
@@ -37,9 +39,9 @@ published_at: 2025-04-20
 
 → 詳しい記事を読んだりまとめることで理解が深まりました💡
 
-- Text Analyticsのまとめ: https://blog.ryamagami.com/ai-900-text_analytics
-- 過学習のメモ: https://blog.ryamagami.com/ai-900-overfitting
-- 多クラス分類のメモ: https://blog.ryamagami.com/ai-900-multiclass_classification
+https://zenn.dev/raynya/articles/ai-900-nlp_note
+https://zenn.dev/raynya/articles/ai-900-classification-metrics
+https://zenn.dev/raynya/articles/ai-900-overfitting
 
 ## 💡 やってみて感じたこと
 - 合格するだけならAzureを触らなくても大丈夫！

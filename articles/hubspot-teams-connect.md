@@ -1,5 +1,5 @@
 ---
-title: "【HubSpot × Teams 連携】2. HubSpotにチームを接続しよう"
+title: "【HubSpot × Teams 連携】2. HubSpotにチームを接続しよう [2025更新]"
 emoji: "🚀"
 type: "tech"
 topics: [HubSpot, Teams]

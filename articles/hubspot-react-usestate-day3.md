@@ -173,6 +173,3 @@ export default function ChangePhraseIsland({ phrase1, phrase2, phrase3 }) {
 
 次は island に渡すフィールドをもっと自由に扱って、表示やデザインを切り替えるようなモジュールに挑戦してみたいと思います！（Day4へつづく…🌟）
 
-### あわせて読みたい 📖
-- 【Day1】propsって何？HubSpot×Reactでキャッチコピー表示してみた — https://blog.ryamagami.com/hubspot-react_module_01
-- 【Day2】チェックひとつで背景色が変わる！BooleanFieldで学ぶ条件レンダリング — https://blog.ryamagami.com/hubspot-react_module_02

@@ -14,7 +14,7 @@ published_at: 2025-05-10
 
 ## はじめに 🌿
 
-今日は[DAY3](https://blog.ryamagami.com/https/blog.ryamagami.com/hubspot-react_module_03)と[DAY4](https://blog.ryamagami.com/https/blog.ryamagami.com/hubspot-react_module_04)で扱った `islands` を、**もっとシンプルなモジュールで深掘り**してみます！
+今日は[DAY3](https://zenn.dev/raynya/articles/hubspot-react-usestate-day3)と[DAY4](https://zenn.dev/raynya/articles/hubspot-react-day4-layout)で扱った `islands` を、**もっとシンプルなモジュールで深掘り**してみます！
 
 「ある条件でだけ特定のパーツを表示したいな〜」という場面、あるよね？   
 今回は `props` を使って **表示・非表示を切り替えるモジュール** を作ってみました💡

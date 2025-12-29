@@ -173,7 +173,7 @@ CSS の指定方法としては、モジュールの module.css に追記する 
 - モジュールの module.html の最後に {% require_css %} と {% end_require_css %} を追加します
 - 追加したタグの中に、<style> タグを追加
 - <style> と </style> の間に、{% scope_css %} {% end_scope_css %} を追加
-![](custom_module-20)
+
 ```html
  {% scope_css %} {% end_scope_css %}
 ```
