@@ -1,6 +1,6 @@
 ---
 title: "HubSpotもMCPに参戦！？MCPサーバを使ってコンタクトを登録してみた【体験レポ】"
-emoji: "🚀"
+emoji: "🤖"
 type: "tech"
 topics: [HubSpot,AI,mcpS]
 published: true

@@ -1,6 +1,6 @@
 ---
 title: "【HubSpot】意外と簡単 ! VSCode で HubSpot CLI を使ってみよう"
-emoji: "🚀"
+emoji: "💻"
 type: "tech"
 topics: [HubSpot,HubSpot CMS,HubSpot CLI,vscode]
 published: true
