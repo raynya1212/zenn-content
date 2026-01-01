@@ -1,6 +1,6 @@
 ---
 title: "【HubSpot × Teams 連携】2. HubSpotにチームを接続しよう [2025更新]"
-emoji: "🚀"
+emoji: "🧶"
 type: "tech"
 topics: [HubSpot, Teams]
 published: true
