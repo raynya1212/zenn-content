@@ -100,7 +100,7 @@ export const meta = {
 > props (property) とは、Reactコンポーネントに**外から値を渡すための仕組み**
 > HubSpotのReactモジュールでは、エディターで入力された値が`props`（正確には`fieldValues`というオブジェクト）として渡されます。
 
-詳しくはこちら：[コンポーネントに props を渡す](\"https://ja.react.dev/learn/passing-props-to-a-component\")
+詳しくはこちら：[コンポーネントに props を渡す](https://ja.react.dev/learn/passing-props-to-a-component)
 
 
 ### ① `ModuleFields` ＝ モジュール全体のフィールド定義エリア

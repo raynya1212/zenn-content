@@ -81,7 +81,6 @@ published_at: "2025-04-12"
 
 ![ChatGPT Image 2025年4月6日 22_28_16](https://23823306.fs1.hubspotusercontent-na1.net/hubfs/23823306/AI-Generated%20Media/Images/ChatGPT%20Image%202025%E5%B9%B44%E6%9C%886%E6%97%A5%2022_28_16.png)
 
-🔖 [インスペクトの使い方については前回の記事をみてね](/hubspot-style-trouble_shooting#section-3)
 
 ### 🧁 旧フォーム（旧フォームエディター）の場合
 
