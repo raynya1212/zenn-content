@@ -504,6 +504,81 @@ geom.py で額縁に filled_map を入れて配置
 
 ---
 
+## 参考にできる公式ドキュメント・ヘルプ
+
+今回の記事で触れた内容に近い Microsoft Learn / Minecraft Education ヘルプのページです。
+Bedrock の Add-On まわりは Minecraft Creator Documentation、教育版の操作や授業利用まわりは Minecraft Education Support Center を見るとよさそうです。
+
+### Minecraft Education の基本
+
+- [Get and deploy Minecraft Education](https://learn.microsoft.com/education/windows/get-minecraft-for-education)
+- [Minecraft Education service description](https://learn.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/minecraft-education-service-description)
+- [Minecraft Education 公式サイト](https://education.minecraft.net/)
+- [Minecraft Education Support Center](https://edusupport.minecraft.net/hc/en-us)
+- [Getting started with Minecraft Education](https://edusupport.minecraft.net/hc/en-us/articles/360047557271-Getting-started-with-Minecraft-Education)
+- [System Requirements](https://edusupport.minecraft.net/hc/en-us/articles/360047556591-System-Requirements)
+- [FAQ: IT Admin Guide](https://edusupport.minecraft.net/hc/en-us/articles/360047118992-FAQ-IT-Admin-Guide)
+- [URLs Used by Minecraft Education](https://edusupport.minecraft.net/hc/en-us/articles/4404784181524-URLs-Used-by-Minecraft-Education)
+
+### ワールドの配布・管理
+
+- [Import, Export, and Manage Worlds](https://edusupport.minecraft.net/hc/en-us/articles/360047555391-Import-Export-and-Manage-Worlds)
+- [Location of World Files](https://edusupport.minecraft.net/hc/en-us/articles/4404785703316-Location-of-World-Files)
+- [Assign or Share Worlds and Lessons](https://edusupport.minecraft.net/hc/en-us/articles/360061811171-Assign-or-Share-Worlds-and-Lessons)
+- [Cloud Upload and Download](https://edusupport.minecraft.net/hc/en-us/articles/19632132361748-Cloud-Upload-and-Download)
+
+### Code Builder / Python
+
+- [Code Builder in Minecraft Education](https://edusupport.minecraft.net/hc/en-us/articles/360047116992-Code-Builder-in-Minecraft-Education)
+- [Minecraft Python coding academy](https://learn.microsoft.com/training/paths/minecraft-python-coding-academy/)
+- [Begin Python coding in Minecraft with MakeCode and Azure Notebooks](https://learn.microsoft.com/training/modules/begin-python-coding-minecraft-makecode-azure-notebooks/)
+- [Transition to Python in Minecraft Education](https://learn.microsoft.com/training/modules/transition-python-minecraft-education-edition/)
+- [Build programs using Python coding in Minecraft with Azure Notebooks](https://learn.microsoft.com/training/modules/build-programs-use-python-coding-minecraft-azure-notebooks/)
+- [Microsoft MakeCode for Minecraft](https://minecraft.makecode.com/)
+
+### Bedrock Add-On / パック構成
+
+- [Creator Learning Journey](https://learn.microsoft.com/minecraft/creator/documents/learningjourneyguide?view=minecraft-bedrock-stable)
+- [Getting Started with Add-On Development for Bedrock Edition](https://learn.microsoft.com/minecraft/creator/documents/gettingstarted?view=minecraft-bedrock-stable)
+- [Introduction to Behavior Packs](https://learn.microsoft.com/minecraft/creator/documents/behaviorpackfromscratch?view=minecraft-bedrock-stable)
+- [Introduction to Resource Packs](https://learn.microsoft.com/minecraft/creator/documents/resourcepack?view=minecraft-bedrock-stable)
+- [Comprehensive List of Add-On Pack Contents](https://learn.microsoft.com/minecraft/creator/documents/comprehensivepackcontents?view=minecraft-bedrock-stable)
+- [Minecraft Samples](https://github.com/microsoft/minecraft-samples)
+
+### コマンド・mcfunction
+
+- [Commands documentation](https://learn.microsoft.com/minecraft/creator/commands/?view=minecraft-bedrock-stable)
+- [List and summary of commands](https://learn.microsoft.com/minecraft/creator/commands/commands?view=minecraft-bedrock-stable)
+- [Introduction to Commands](https://learn.microsoft.com/minecraft/creator/documents/commandsintroduction?view=minecraft-bedrock-stable)
+- [Target Selectors](https://learn.microsoft.com/minecraft/creator/documents/targetselectors?view=minecraft-bedrock-stable)
+- [Popular Commands](https://learn.microsoft.com/minecraft/creator/documents/commandspopularcommands?view=minecraft-bedrock-stable)
+- [Introduction to Functions](https://learn.microsoft.com/minecraft/creator/documents/functionsintroduction?view=minecraft-bedrock-stable)
+- [MC Functions Validation Rules](https://learn.microsoft.com/minecraft/creator/reference/content/mctoolsvalreference/mcfunction?view=minecraft-bedrock-stable)
+- [`/function` Command](https://learn.microsoft.com/minecraft/creator/reference/content/commandsreference/examples/commands/function?view=minecraft-bedrock-stable)
+- [`/scoreboard` Command](https://learn.microsoft.com/minecraft/creator/reference/content/commandsreference/examples/commands/scoreboard?view=minecraft-bedrock-stable)
+- [`/execute` Command](https://learn.microsoft.com/minecraft/creator/commands/commands/execute?view=minecraft-bedrock-stable)
+- [`/summon` Command](https://learn.microsoft.com/minecraft/creator/commands/commands/summon?view=minecraft-bedrock-stable)
+- [`/tag` Command](https://learn.microsoft.com/minecraft/creator/commands/commands/tag?view=minecraft-bedrock-stable)
+- [`/give` Command](https://learn.microsoft.com/minecraft/creator/commands/commands/give?view=minecraft-bedrock-stable)
+- [`/title` Command](https://learn.microsoft.com/minecraft/creator/commands/commands/title?view=minecraft-bedrock-stable)
+- [Essential Commands](https://edusupport.minecraft.net/hc/en-us/articles/360047555451-Essential-Commands)
+
+### NPC / dialogue
+
+- [Adding Non-Player Characters (NPCs)](https://edusupport.minecraft.net/hc/en-us/articles/360047555651-Adding-Non-Player-Characters-NPCs)
+- [NPC Dialogue Command](https://learn.microsoft.com/minecraft/creator/documents/npcdialogue?view=minecraft-bedrock-stable)
+- [`/dialogue` Command](https://learn.microsoft.com/minecraft/creator/commands/commands/dialogue?view=minecraft-bedrock-stable)
+- [Create a Custom NPC](https://learn.microsoft.com/minecraft/creator/documents/createnpcs?view=minecraft-bedrock-stable)
+- [Raw Message JSON](https://learn.microsoft.com/minecraft/creator/reference/content/rawmessagejson?view=minecraft-bedrock-stable)
+
+### 教育版ならではのワールドづくり
+
+- [Specialty Blocks (Allow, Deny, Border, Structure)](https://edusupport.minecraft.net/hc/en-us/articles/360047116852-Specialty-Blocks-Allow-Deny-Border-Structure)
+- [Profile Types and Permissions](https://edusupport.minecraft.net/hc/en-us/articles/360047117072-Profile-Types-and-Permissions)
+- [Assessment Tools (Cameras, Portfolio, Book & Quill)](https://edusupport.minecraft.net/hc/en-us/articles/360047555551-Assessment-Tools-Cameras-Portfolio-Book-Quill)
+- [Minecraft Education Lesson Plans](https://edusupport.minecraft.net/hc/en-us/articles/360047555411-Minecraft-Education-Lesson-Plans)
+- [Research About Game-Based Learning](https://edusupport.minecraft.net/hc/en-us/articles/360047116892-Research-About-Game-Based-Learning)
+
 ## おわりに
 
 
